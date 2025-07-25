@@ -5,6 +5,7 @@ import { Producto } from './product';
 
 @Component({
   selector: 'app-product-component',
+  standalone:true,
   imports: [CommonModule],
   templateUrl: './product-component.html',
   styleUrl: './product-component.css',
