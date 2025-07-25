@@ -1,0 +1,14 @@
+<div *ngFor="let producto of productos; trackBy: trackById"
+    class="bg-lofi-gradient-card rounded-lg shadow-md p-6 flex flex-col items-center space-y-4 hover:shadow-xl transition-shadow duration-300">
+    <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="w-40 h-40 object-cover rounded-md" />
+    <h2 class="text-2xl font-bold text-cyan-300 text-center">
+        {{ producto.nombre }}
+    </h2>
+    <p class="text-white text-center text-sm leading-relaxed">
+        {{ producto.descripcion }}
+    </p>
+    <p class="text-indigo-600 font-bold text-xl">${{ producto.precio }}</p>
+    <button class="mt-auto bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors">
+        Comprar
+    </button>
+</div>

@@ -1,50 +1,57 @@
 [
   {
+    "id":1,
     "nombre": "Pack de Fondos de Pantalla Lofi",
     "descripcion": "10 fondos de pantalla en alta resolución con ilustraciones lofi originales.",
-    "imagen": "assets/imagenes/fondos_lofi.jpg",
+    "imagen": "https://static.vecteezy.com/system/resources/previews/036/430/903/non_2x/relaxing-atmospheric-lofi-wallpapers-set-cozy-study-space-rainy-night-owl-2d-cartoon-flat-illustrations-collection-cat-licking-paw-vinyl-player-chill-art-pack-lo-fi-aesthetic-backgrounds-vector.jpg",
     "categoria": "Fondos de pantalla",
     "precio": 5.99
   },
   {
+    "id":2,
     "nombre": "Pack de Beats Lofi Vol. 1",
     "descripcion": "Colección de 20 beats lofi para relajarte o estudiar, en formato MP3 y WAV.",
-    "imagen": "assets/imagenes/beats_vol1.jpg",
+    "imagen": "https://i1.sndcdn.com/artworks-g5pzkc2470S85CLK-OPzrNg-t500x500.jpg",
     "categoria": "Música",
     "precio": 9.99
   },
   {
+    "id":3,
     "nombre": "Stickers Animados Lofi",
     "descripcion": "Paquete de 15 stickers animados estilo lofi para usar en redes sociales o WhatsApp.",
-    "imagen": "assets/imagenes/stickers_animados.jpg",
+    "imagen": "https://i.etsystatic.com/37905094/c/2122/2122/0/0/il/6dafde/4852046964/il_300x300.4852046964_mq76.jpg",
     "categoria": "Stickers",
     "precio": 3.99
   },
   {
+    "id":4,
     "nombre": "Plantilla Notion Lofi",
     "descripcion": "Organiza tu vida con esta plantilla para Notion inspirada en la estética lofi.",
-    "imagen": "assets/imagenes/notion_plantilla.jpg",
+    "imagen": "https://lofigirlshop.com/cdn/shop/files/5_34c9aad4-a71c-403e-b350-c87e405f7569_1200x1200.png?v=1704982368",
     "categoria": "Plantillas",
     "precio": 4.99
   },
   {
+    "id":5,
     "nombre": "Icon Pack Lofi para Windows/Mac",
     "descripcion": "Paquete de más de 100 íconos personalizables con temática lofi.",
-    "imagen": "assets/imagenes/icon_pack.jpg",
+    "imagen": "https://i.etsystatic.com/49587724/r/il/4709e6/6105843831/il_570xN.6105843831_4gd8.jpg",
     "categoria": "Iconos",
     "precio": 2.99
   },
   {
+    "id":6,
     "nombre": "Pack de Beats Lofi Vol. 2",
     "descripcion": "Segunda colección con 25 beats relajantes para tus proyectos o chill time.",
-    "imagen": "assets/imagenes/beats_vol2.jpg",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwWu8aMt5oSnV1qIzCDHKin9ithlKLPz34A&s",
     "categoria": "Música",
     "precio": 11.99
   },
   {
+    "id":7,
     "nombre": "Mini Animaciones Lofi Loop",
     "descripcion": "5 mini animaciones tipo 'lofi girl' para usar como fondos o intros en YouTube.",
-    "imagen": "assets/imagenes/animaciones_lofi.jpg",
+    "imagen": "https://preview.redd.it/for-hire-lo-fi-artist-for-hire-if-you-are-looking-for-a-v0-boe2ebblktfb1.png?width=640&crop=smart&auto=webp&s=d934723b1a85c6dfcf6d9fdb72f667d0f22366c6",
     "categoria": "Animaciones",
     "precio": 7.99
   }
