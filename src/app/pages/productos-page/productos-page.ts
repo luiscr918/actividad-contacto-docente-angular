@@ -8,5 +8,7 @@ import { ProductComponent } from "../../components/product-component/product-com
   styleUrl: './productos-page.css'
 })
 export class ProductosPage {
-
+  cargarProductos=()=>{
+    window.location.reload();
+  }
 }

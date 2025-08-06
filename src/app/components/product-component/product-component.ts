@@ -5,16 +5,13 @@ import { Producto } from './product';
 
 @Component({
   selector: 'app-product-component',
-  standalone:true,
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './product-component.html',
   styleUrl: './product-component.css',
 })
 export class ProductComponent {
-  constructor(private http: HttpClient) {}
-
-  productos: Producto[] = [];
-  ngOnInit(): void {
+  constructor(private http: HttpClient) {
     this.http
       .get<Producto[]>('assets/jsons/productos.json')
       .subscribe((data) => {
@@ -22,7 +19,8 @@ export class ProductComponent {
         console.log('Productos cargados:', this.productos);
       });
   }
-  trackById(index: number, item: Producto): number {
-    return item.id;
-  }
+
+  productos: Producto[] = [];
+
+
 }
