@@ -1,0 +1,38 @@
+<!-- component -->
+<div class="bg-gradient-to-bl from-pink-400 via-purple-400 to-fuchsia-500 flex justify-center items-center h-screen">
+    <!-- Left: Image -->
+    <div class="w-1/2 h-screen hidden lg:block">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/5c9e06114084301.6034c329b0e28.gif"
+            alt="Placeholder Image" class="object-cover w-full h-full">
+    </div>
+    <!-- Right: Login Form -->
+    <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2 text-white">
+        <h1 class="text-2xl font-semibold mb-4 text-center text-white">Login</h1>
+        <form (ngSubmit)="logearse()">
+            <!-- Username Input -->
+            <div class="mb-4 ">
+                <label for="email" class="block text-cyan-400">Email</label>
+                <input [(ngModel)]="email" type="email" id="email" name="email"
+                    class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                    autocomplete="off">
+            </div>
+            <!-- Password Input -->
+            <div class="mb-4">
+                <label for="password" class="block text-cyan-400">Password</label>
+                <input [(ngModel)]="password" type="password" id="password" name="password"
+                    class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                    autocomplete="off">
+            </div>
+            <!-- Login Button -->
+            <button type="submit"
+                class="bg-gradient-to-br from-purple-800 via-purple-600 to-fuchsia-500 text-white font-semibold rounded-md py-2 px-4 w-full cursor-pointer">Login</button>
+        </form>
+        @if(error){
+        <span class="text-red-500">{{error}}</span>
+        }
+        <!-- Sign up  Link -->
+        <div class="mt-6 text-white text-center">
+            <a routerLink="/registro-usuario" class="hover:underline cursor-pointer">Registrate aquí</a>
+        </div>
+    </div>
+</div>

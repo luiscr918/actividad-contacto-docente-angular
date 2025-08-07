@@ -1,3 +1,11 @@
 {
-    "usuarios":[]
+  "usuarios": [
+    {
+      "id": "4653",
+      "nombre": "Luis Castillo",
+      "email": "luis@gmail.com",
+      "direccion": "Cutuglagua",
+      "password": "luis123"
+    }
+  ]
 }

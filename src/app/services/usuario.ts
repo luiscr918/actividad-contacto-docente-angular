@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,10 +8,11 @@ import { Injectable } from '@angular/core';
 export class Usuario {
   constructor(private http:HttpClient){}
 
-  UsuarioValido:Usuario[]=[];
+
   private APIUSUARIOS='http://localhost:3000/usuarios';
 
- agregarUsuario=(usuario:Usuario)=>{
-  this.http.post<Usuario>(this.APIUSUARIOS,usuario);
- }
+ agregarUsuario=(usuario:Usuario):Observable<Usuario>=>{
+  return this.http.post<Usuario>(`${this.APIUSUARIOS}`,usuario)
+ 
+ };
 }

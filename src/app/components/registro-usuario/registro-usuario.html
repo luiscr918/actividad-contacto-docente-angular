@@ -1,23 +1,48 @@
-<div class="m-10">
-    <h2 class="text-xl text-center">Registro de Usuario</h2>
-<form class="max-w-sm mx-auto">
-  <div class="mb-5">
-    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email:</label>
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
-  </div>
-  <div class="mb-5">
-    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
-    <input type="text" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="Ingresa tu Contraseña" />
-  </div>
-  <div class="mb-5">
-    <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 ">Nombre</label>
-    <input type="text" id="nombre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingresa tu nombre" required />
-  </div>
-  <div class="mb-5">
-    <label for="direccion" class="block mb-2 text-sm font-medium text-gray-900 ">Direccion</label>
-    <input type="direccion" id="direccion" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingresa tu Direccion" required />
-  </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
-</div>
+<div class="bg-gradient-to-br from-purple-800 via-purple-600 to-fuchsia-500 p-5">
 
+  <h2 class="text-xl text-center text-white">Registro de Usuario</h2>
+  <form class="max-w-sm mx-auto" [formGroup]="registroForm" (ngSubmit)="registrar()">
+    <div class="mb-5">
+      <label for="email" class="block mb-2 text-sm font-medium text-cyan-500 ">Email:</label>
+      <input formControlName="email" type="email" id="email"
+        class="bg-pink-200 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+        placeholder="name@flowbite.com" required />
+      @if(registroForm.get('email')?.invalid &&
+      registroForm.get('email')?.touched){
+      <span class="text-red-500 text-sm">El correo es incorrecto</span>
+      }
+    </div>
+    <div class="mb-5">
+      <label for="password" class="block mb-2 text-sm font-medium text-cyan-500 ">Password</label>
+      <input formControlName="password" type="text" id="password"
+        class="bg-pink-200 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+        required placeholder="Ingresa tu Contraseña" />
+      @if(registroForm.get('password')?.invalid &&
+      registroForm.get('password')?.touched){
+      <span class="text-red-500 text-sm">La constraseña es incorrecta</span>
+      }
+    </div>
+    <div class="mb-5">
+      <label for="nombre" class="block mb-2 text-sm font-medium text-cyan-500 ">Nombre</label>
+      <input formControlName="nombre" type="text" id="nombre"
+        class="bg-pink-200 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+        placeholder="Ingresa tu nombre" required />
+      @if(registroForm.get('nombre')?.invalid &&
+      registroForm.get('nombre')?.touched){
+      <span class="text-red-500 text-sm">El nombre es incorrecto</span>
+      }
+    </div>
+    <div class="mb-5">
+      <label for="direccion" class="block mb-2 text-sm font-medium text-cyan-500 ">Direccion</label>
+      <input formControlName="direccion" type="direccion" id="direccion"
+        class="bg-pink-200 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+        placeholder="Ingresa tu Direccion" required />
+      @if(registroForm.get('email')?.invalid &&
+      registroForm.get('email')?.touched){
+      <span class="text-red-500 text-sm">La dirección es invalida</span>
+      }
+    </div>
+    <button type="submit"
+      class="text-white bg-emerald-300 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center flex justify-center">Guardar</button>
+  </form>
+</div>
