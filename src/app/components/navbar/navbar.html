@@ -24,7 +24,7 @@
         <!--  } -->
         <!--  @if (loginService.sesionIniciada()) { -->
         <li class="text-sm text-white flex align-middle">
-          <button routerLink="/login" type="button"
+          <button (click)="cerrarSesion()" type="button"
             class="cursor-pointer text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Cerrar
             Sesión</button>
         </li>
